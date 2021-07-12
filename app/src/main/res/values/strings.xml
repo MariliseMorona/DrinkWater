@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Drink Water</string>
+    <string name="text_welcome">Quantas águas você já bebeu hoje ??</string>
+    <string name="text_count">0</string>
+    <string name="text_random">Congratulations !!</string>
+    <string name="btn_drink">+1 copo</string>
+</resources>

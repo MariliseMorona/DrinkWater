@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="textBox">
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">@dimen/dimen_15dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:fontFamily">@font/amita</item>
+    </style>
+
+    <style name="imageBox">
+        <item name="android:layout_margin">20dp</item>
+        <item name="backgroundTint">@color/blue_light</item>
+    </style>
+</resources>

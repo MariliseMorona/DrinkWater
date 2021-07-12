@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/border_btn"
+    android:layout_margin="16dp"
+    tools:context=".view.MainActivity">
+
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/textBox"
+        android:text="@string/text_welcome"
+        app:layout_constraintBottom_toTopOf="@+id/mgv_glass"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/mgv_glass"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        style="@style/imageBox"
+        app:layout_constraintBottom_toTopOf="@id/txt_counter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_title"
+        app:srcCompat="@drawable/ic_drink" />
+
+    <TextView
+        android:id="@+id/txt_counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_count"
+        style="@style/textBox"
+        app:layout_constraintBottom_toTopOf="@id/btn_drink"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mgv_glass" />
+
+    <Button
+        android:id="@+id/btn_drink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/imageBox"
+        android:text="@string/btn_drink"
+        android:onClick="onClick"
+        android:background="@drawable/background_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_counter"
+        app:layout_constraintBottom_toTopOf="@id/txt_congratulations"
+        tools:ignore="OnClick" />
+
+    <TextView
+        android:id="@+id/txt_congratulations"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_random"
+        style="@style/textBox"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_drink" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
