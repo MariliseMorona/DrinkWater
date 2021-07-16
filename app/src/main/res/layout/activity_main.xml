@@ -21,8 +21,8 @@
 
     <ImageView
         android:id="@+id/mgv_glass"
-        android:layout_width="350dp"
-        android:layout_height="350dp"
+        android:layout_width="320dp"
+        android:layout_height="320dp"
         style="@style/imageBox"
         app:layout_constraintBottom_toTopOf="@id/txt_counter"
         app:layout_constraintEnd_toEndOf="parent"
