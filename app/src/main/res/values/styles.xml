@@ -2,7 +2,7 @@
 <resources>
     <style name="textBox">
         <item name="android:textAlignment">center</item>
-        <item name="android:textSize">@dimen/dimen_15dp</item>
+        <item name="android:textSize">@dimen/dimen_18dp</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@android:color/black</item>
         <item name="android:fontFamily">@font/amita</item>
